@@ -1,8 +1,24 @@
 [
     {
+        "id": "0c809b82525ab765",
+        "type": "tab",
+        "label": "0-Dashboard (Digital Twin)",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "7ea6938ae37cbe94",
         "type": "tab",
         "label": "1-Early Warning System",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a9319fe458afe6b6",
+        "type": "tab",
+        "label": "2-Communication and information sharing",
         "disabled": false,
         "info": "",
         "env": []
@@ -2410,6 +2426,43 @@
         }
     },
     {
+        "id": "6b6c5faec21326f9",
+        "type": "subflow",
+        "name": "meshtastic chat ui",
+        "info": "",
+        "category": "※meshtastic_chat",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "0a0e8259eebb401b"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "Group",
+                "type": "ui-group",
+                "value": "",
+                "ui": {
+                    "type": "conf-types"
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#9FE6EC",
+        "icon": "node-red/node_icon_meshtastic.png",
+        "status": {
+            "x": 300,
+            "y": 180,
+            "wires": []
+        }
+    },
+    {
         "id": "ff55010600100002",
         "type": "subflow",
         "name": "meshtastic tracker - get gps position",
@@ -3946,41 +3999,82 @@
         ]
     },
     {
-        "id": "6b6c5faec21326f9",
-        "type": "subflow",
-        "name": "meshtastic chat ui",
-        "info": "",
-        "category": "※meshtastic_chat",
-        "in": [
-            {
-                "x": 60,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "0a0e8259eebb401b"
-                    }
-                ]
-            }
+        "id": "403fd0931430b1ba",
+        "type": "group",
+        "z": "0c809b82525ab765",
+        "name": "",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "995c84e705c42f95",
+            "c10a21c1b22ffdab",
+            "1b8318210eb474c7",
+            "4d962a89b81eb87a",
+            "f8e3221e1e80cbfe",
+            "645dfed0a903142d",
+            "25731624943ab460",
+            "01dc38762911d137",
+            "79bf31c1444fcbe6",
+            "195f5a9cdc829090",
+            "424b8ba73055c5fd",
+            "ba5793fde63da3de",
+            "20ea6d9dd442b76f",
+            "551908b4f634e351",
+            "9db4c2e9d0a9ec58"
         ],
-        "out": [],
-        "env": [
-            {
-                "name": "Group",
-                "type": "ui-group",
-                "value": "",
-                "ui": {
-                    "type": "conf-types"
-                }
-            }
+        "x": 14,
+        "y": 699,
+        "w": 492,
+        "h": 622
+    },
+    {
+        "id": "b860a2396af6a58d",
+        "type": "group",
+        "z": "0c809b82525ab765",
+        "name": "",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "c343e6092a6dbe7c",
+            "c0aa7556530111a0",
+            "bb3471a7f85fb434",
+            "2daa1918dc47a50f",
+            "73051e495187766b",
+            "20231490b3c12cec",
+            "84ae227288e9adad"
         ],
-        "meta": {},
-        "color": "#9FE6EC",
-        "icon": "node-red/node_icon_meshtastic.png",
-        "status": {
-            "x": 300,
-            "y": 180,
-            "wires": []
-        }
+        "x": 14,
+        "y": 19,
+        "w": 812,
+        "h": 242
+    },
+    {
+        "id": "53583def5a2df0c8",
+        "type": "group",
+        "z": "0c809b82525ab765",
+        "name": "",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "c28dc59ceae9c32d",
+            "98c40f424a9c44e2",
+            "f353fb9f47e745d7",
+            "c3b1a5da5f43d713",
+            "519ba749ee53d39b"
+        ],
+        "x": 14,
+        "y": 279,
+        "w": 792,
+        "h": 402
     },
     {
         "id": "78ead2245c9ecb8e",
@@ -4081,6 +4175,114 @@
         "y": 19,
         "w": 612,
         "h": 182
+    },
+    {
+        "id": "8eb1280652c660c2",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "name": "",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "03f1fdf2a31d8134",
+            "db5ac7ba2a754d65",
+            "4a5b13a4e63396ee",
+            "8f011a4c95e46173",
+            "33637b17a506cbd0"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "cabc3b813baaea59",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "name": "",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "2fbc45a4def674f8",
+            "2c02a34157a2ec9b",
+            "cf0be92962dd1c37",
+            "a671425179a5ebba",
+            "fde8650716160e52",
+            "1e4ac8c4f95f8ccf",
+            "16c63bfa8614cb46",
+            "b0b222c55b1cca0c",
+            "ea24ab258435fcf5",
+            "6974dd9f8541cf10",
+            "906da40788a2a653",
+            "1b254c2ecc8d070c",
+            "62028a4a17998fde",
+            "bc11da047423a1a6",
+            "15b3a31efa73cab8",
+            "207ff54d4031988f",
+            "b6787453fdafa34f",
+            "63ec0ca68c54bf68",
+            "89ed2cd971381520"
+        ],
+        "x": 14,
+        "y": 739,
+        "w": 1052,
+        "h": 502
+    },
+    {
+        "id": "d72fe5300f0090a1",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "name": "",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "747375a58c6ca14e",
+            "aa1a0522cb1e76b4",
+            "a6279e97f8d67997",
+            "b288e522160ae3e5",
+            "a4bb8528feb6766c",
+            "710ca388b2b9c30f",
+            "158ad691aac3f239",
+            "70a4a1dd58581050",
+            "46a4333e9f1af0bb",
+            "7743bc6a2a1fee06",
+            "1551266451c3fb26"
+        ],
+        "x": 14,
+        "y": 1259,
+        "w": 852,
+        "h": 442
+    },
+    {
+        "id": "25dbbcda2ecff0d3",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "name": "",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "715d4e1eff0435c7",
+            "346a2b3c97997210",
+            "3c5b4e04f79ed01c",
+            "45547527be48c127",
+            "c908a7b3e9ceed5f"
+        ],
+        "x": 14,
+        "y": 219,
+        "w": 938,
+        "h": 502
     },
     {
         "id": "69a9c77ee5e784d2",
@@ -4723,24 +4925,22 @@
         "h": 202
     },
     {
-        "id": "2bb23bcf3066d948",
+        "id": "f4f3769682678829",
         "type": "group",
         "z": "c4c69de5166fafdd",
-        "name": "update geofence",
+        "name": "dashboard ui",
         "style": {
             "label": true
         },
         "nodes": [
-            "bf8030f03f7aaecf",
-            "4c15cc8d575e89cc",
-            "55b5b5ed834e5c05",
-            "f80e7c523421d7bc",
-            "ab32e98ba6154f6b"
+            "e7755049244b350f",
+            "bb27f4c3b8c37aea",
+            "ade60163a11e3c8c"
         ],
         "x": 54,
-        "y": 251.5,
-        "w": 632,
-        "h": 149.5
+        "y": 39,
+        "w": 532,
+        "h": 82
     },
     {
         "id": "99e5220aef247514",
@@ -4761,22 +4961,24 @@
         "h": 82
     },
     {
-        "id": "f4f3769682678829",
+        "id": "2bb23bcf3066d948",
         "type": "group",
         "z": "c4c69de5166fafdd",
-        "name": "dashboard ui",
+        "name": "update geofence",
         "style": {
             "label": true
         },
         "nodes": [
-            "e7755049244b350f",
-            "bb27f4c3b8c37aea",
-            "ade60163a11e3c8c"
+            "bf8030f03f7aaecf",
+            "4c15cc8d575e89cc",
+            "55b5b5ed834e5c05",
+            "f80e7c523421d7bc",
+            "ab32e98ba6154f6b"
         ],
         "x": 54,
-        "y": 39,
-        "w": 532,
-        "h": 82
+        "y": 251.5,
+        "w": 632,
+        "h": 149.5
     },
     {
         "id": "e5814d054eae8048",
@@ -4879,6 +5081,165 @@
         "y": 399,
         "w": 1032,
         "h": 142
+    },
+    {
+        "id": "519ba749ee53d39b",
+        "type": "group",
+        "z": "0c809b82525ab765",
+        "g": "53583def5a2df0c8",
+        "name": "Receive tracker's postion reported, and add a poin to the map",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "33ba69f8c29db322",
+            "8717ef571bd0c94b"
+        ],
+        "x": 64,
+        "y": 359,
+        "w": 582,
+        "h": 82
+    },
+    {
+        "id": "98c40f424a9c44e2",
+        "type": "group",
+        "z": "0c809b82525ab765",
+        "g": "53583def5a2df0c8",
+        "name": "A ui button to clear geofence record",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "62700aef3ed0781b",
+            "b18ad46558af0da4",
+            "4ac8240eb50406b5"
+        ],
+        "x": 54,
+        "y": 559,
+        "w": 612,
+        "h": 82
+    },
+    {
+        "id": "c28dc59ceae9c32d",
+        "type": "group",
+        "z": "0c809b82525ab765",
+        "g": "53583def5a2df0c8",
+        "name": "When a new tracker's position reported, check geofence",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c843e5d7ef9ff5ae",
+            "1146255d1badf7fc",
+            "5988c82904bef598"
+        ],
+        "x": 64,
+        "y": 459,
+        "w": 702,
+        "h": 82
+    },
+    {
+        "id": "715d4e1eff0435c7",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "g": "25dbbcda2ecff0d3",
+        "name": "send chat message",
+        "style": {
+            "label": true,
+            "fill": "none"
+        },
+        "nodes": [
+            "afb2442e6fbc5d8a",
+            "65b38002d80a7926",
+            "fec2fa8ad7704214",
+            "1ec0c0238c825493",
+            "53870e44e5ace8b2",
+            "43be761c3e9e9f74"
+        ],
+        "x": 54,
+        "y": 539,
+        "w": 872,
+        "h": 122
+    },
+    {
+        "id": "346a2b3c97997210",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "g": "25dbbcda2ecff0d3",
+        "name": "chat box ui",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f080684a49dc646f",
+            "53d0b77130e78707",
+            "bebcbd1ab1269bbf",
+            "b70b4cead50cf7b4",
+            "1fd59b16301a17e8"
+        ],
+        "x": 54,
+        "y": 299,
+        "w": 712,
+        "h": 122
+    },
+    {
+        "id": "3c5b4e04f79ed01c",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "g": "25dbbcda2ecff0d3",
+        "name": "receive chat message",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8d248fc5be748a9e",
+            "f4e38e4884fc9cdc"
+        ],
+        "x": 54,
+        "y": 439,
+        "w": 472,
+        "h": 82
+    },
+    {
+        "id": "89ed2cd971381520",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "ui",
+        "style": {
+            "label": true,
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "2d6114a1bb679b95",
+            "b87a78564d7dd3ff",
+            "74fde634240e1723"
+        ],
+        "x": 54,
+        "y": 819,
+        "w": 442,
+        "h": 122
+    },
+    {
+        "id": "1551266451c3fb26",
+        "type": "group",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "ui",
+        "style": {
+            "label": true,
+            "fill": "#dbcbe7",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e2b620f2ecf5b4b7",
+            "db96dce448c12ae5",
+            "c9a448b4454fc848"
+        ],
+        "x": 74,
+        "y": 1339,
+        "w": 552,
+        "h": 122
     },
     {
         "id": "f6a28ecd60a867cd",
@@ -10000,195 +10361,6 @@
         ]
     },
     {
-        "id": "ab32e98ba6154f6b",
-        "type": "link out",
-        "z": "c4c69de5166fafdd",
-        "g": "2bb23bcf3066d948",
-        "name": "set worldmap",
-        "mode": "link",
-        "links": [
-            "bb27f4c3b8c37aea"
-        ],
-        "x": 580,
-        "y": 360,
-        "wires": [],
-        "l": true
-    },
-    {
-        "id": "f80e7c523421d7bc",
-        "type": "template",
-        "z": "c4c69de5166fafdd",
-        "g": "2bb23bcf3066d948",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "{\n    \"command\": {\n        \"name\": \"Circle5\",\n        \"deleted\": true\n    }\n}",
-        "output": "json",
-        "x": 390,
-        "y": 360,
-        "wires": [
-            [
-                "ab32e98ba6154f6b"
-            ]
-        ]
-    },
-    {
-        "id": "55b5b5ed834e5c05",
-        "type": "function",
-        "z": "c4c69de5166fafdd",
-        "g": "2bb23bcf3066d948",
-        "name": "update geofence",
-        "func": "var payload = msg.payload;\nvar circleMsg = null;\nvar rectangleMsg = null;\nvar polygonMsg = null;\n\n// Parse the incoming payload\ntry {\n    var parsedPayload = JSON.parse(payload);\n} catch (e) {\n    // node.error(\"Invalid JSON payload\", msg);\n    return null;\n}\n\n// Store geofence data in flow context\nif (parsedPayload.type === \"Circle\") {\n    global.set('geofence_geoLat', parsedPayload.lat);\n    global.set('geofence_geoLng', parsedPayload.lon);\n    global.set('geofence_radius', parsedPayload.radius);\n    circleMsg = { \n        payload: parsedPayload \n    };\n    var warnlog = \"Circle geofence set: \" + JSON.stringify(parsedPayload);\n    // node.warn(\"Circle geofence set: \" + JSON.stringify(parsedPayload));\n    node.status({ fill: \"grey\", shape: \"ring\", text: warnlog });\n} else if (parsedPayload.type === \"Rectangle\") {\n    global.set('geofence_geoArea', parsedPayload.area);\n    rectangleMsg = { \n        payload: parsedPayload \n    };\n    var warnlog = \"Rectangle geofence set: \" + JSON.stringify(parsedPayload);\n    // node.warn(\"Rectangle geofence set: \" + JSON.stringify(parsedPayload));\n    node.status({ fill: \"grey\", shape: \"ring\", text: warnlog });\n} else if (parsedPayload.type === \"Polygon\") {\n    global.set('geofence_geoPolygon', parsedPayload.area);\n    polygonMsg = { \n        payload: parsedPayload\n    };\n    var warnlog = \"Polygon geofence set: \" + JSON.stringify(parsedPayload);\n    // node.warn(\"Polygon geofence set: \" + JSON.stringify(parsedPayload));\n    node.status({ fill: \"grey\", shape: \"ring\", text: warnlog });\n}\n\nreturn [circleMsg, rectangleMsg, polygonMsg];\n",
-        "outputs": 3,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 570,
-        "y": 300,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "4c15cc8d575e89cc",
-        "type": "json",
-        "z": "c4c69de5166fafdd",
-        "g": "2bb23bcf3066d948",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 390,
-        "y": 300,
-        "wires": [
-            [
-                "55b5b5ed834e5c05"
-            ]
-        ]
-    },
-    {
-        "id": "bf8030f03f7aaecf",
-        "type": "worldmap in",
-        "z": "c4c69de5166fafdd",
-        "g": "2bb23bcf3066d948",
-        "name": "worldmap geofence event",
-        "path": "${webPath}",
-        "events": "draw",
-        "x": 190,
-        "y": 300,
-        "wires": [
-            [
-                "4c15cc8d575e89cc",
-                "f80e7c523421d7bc"
-            ]
-        ]
-    },
-    {
-        "id": "96ea24175fedf6f4",
-        "type": "link out",
-        "z": "c4c69de5166fafdd",
-        "g": "99e5220aef247514",
-        "name": "set worldmap",
-        "mode": "link",
-        "links": [
-            "bb27f4c3b8c37aea"
-        ],
-        "x": 860,
-        "y": 180,
-        "wires": [],
-        "l": true
-    },
-    {
-        "id": "bb27f4c3b8c37aea",
-        "type": "link in",
-        "z": "c4c69de5166fafdd",
-        "g": "f4f3769682678829",
-        "name": "set worldmap'",
-        "links": [
-            "1f20fd19c6b93810",
-            "96ea24175fedf6f4",
-            "eeecd4df7a93968f",
-            "af8c93719ea1fabf",
-            "ab32e98ba6154f6b"
-        ],
-        "x": 350,
-        "y": 80,
-        "wires": [
-            [
-                "ade60163a11e3c8c"
-            ]
-        ],
-        "l": true
-    },
-    {
-        "id": "26312f12f3217573",
-        "type": "worldmap in",
-        "z": "c4c69de5166fafdd",
-        "g": "99e5220aef247514",
-        "name": "worldmap geofence event",
-        "path": "${webPath}",
-        "events": "connect",
-        "x": 190,
-        "y": 180,
-        "wires": [
-            [
-                "337633503c2515db"
-            ]
-        ]
-    },
-    {
-        "id": "e7755049244b350f",
-        "type": "ui-template",
-        "z": "c4c69de5166fafdd",
-        "g": "f4f3769682678829",
-        "group": "${Group}",
-        "page": "",
-        "ui": "",
-        "name": "Map ui",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n   <iframe src=\"/w\" width=\"100%\" height=\"100%\" frameborder=\"0\" loading=\"lazy\" class=\"iframe\" allow=\"geolocation\"></iframe>\n</template>\n\n<style scoped>\n   .iframe {\n      width: 100% !important;\n      height: 100% !important;\n      position: absolute;\n      left: 0;\n      top: 0;\n   }\n</style>",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 130,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "337633503c2515db",
-        "type": "function",
-        "z": "c4c69de5166fafdd",
-        "g": "99e5220aef247514",
-        "name": "send map config commands from envs and defaults",
-        "func": "return {\n    payload: {\n        \"command\": {\n            // define offline map\n            map: {\n                name: \"SenseCraft Offline Map\",\n                pmtiles: \"/data/files/_geofence/map-\" + env.get(\"offlineMapZoom\") + \".pmtiles\",\n                opt: {\n                    \"attribution\": \"SenseCraft Offline Map\",\n                    \"maxDataZoom\": parseInt(env.get(\"offlineMapZoom\")),\n                    \"maxZoom\": 20,\n                    \"theme\": \"light\"\n                }\n            },\n\n            // use offline map\n            layer: env.get(\"useOfflineMap\") ? \"SenseCraft Offline Map\" : \"Esri Streetmap\",\n\n            // default central and zoom\n            lat: env.get(\"startLatitude\"),\n            lon: env.get(\"startLongitude\"),\n            zoom: env.get(\"zoom\"),\n\n            // adjust map ui\n            showlayer: [\"drawing\", \"tracker\"],\n            ruler: { \"showruler\": false },\n            hiderightclick: true,\n            toptitle: \"SenseCraft Map\",\n            drawcontextmenu: \n                \"<button onclick='editPoly(\\\"geofence\\\");'>Edit points</button>\" +\n                \"<button onclick='editPoly(\\\"geofence\\\", \\\"drag\\\");'>Drag</button>\" +\n                \"<button onclick='editPoly(\\\"geofence\\\", \\\"rot\\\");'>Rotate</button>\" +\n                \"<button onclick='delMarker(\\\"geofence\\\", true);'>Delete</button>\" +\n                \"<button onclick='delMarker(\\\"geofence\\\", true); sendDrawing();'>Set Geofence</button>\"\n        }\n    }\n};",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 540,
-        "y": 180,
-        "wires": [
-            [
-                "96ea24175fedf6f4"
-            ]
-        ]
-    },
-    {
         "id": "ade60163a11e3c8c",
         "type": "worldmap",
         "z": "c4c69de5166fafdd",
@@ -10220,6 +10392,195 @@
         "x": 500,
         "y": 80,
         "wires": []
+    },
+    {
+        "id": "337633503c2515db",
+        "type": "function",
+        "z": "c4c69de5166fafdd",
+        "g": "99e5220aef247514",
+        "name": "send map config commands from envs and defaults",
+        "func": "return {\n    payload: {\n        \"command\": {\n            // define offline map\n            map: {\n                name: \"SenseCraft Offline Map\",\n                pmtiles: \"/data/files/_geofence/map-\" + env.get(\"offlineMapZoom\") + \".pmtiles\",\n                opt: {\n                    \"attribution\": \"SenseCraft Offline Map\",\n                    \"maxDataZoom\": parseInt(env.get(\"offlineMapZoom\")),\n                    \"maxZoom\": 20,\n                    \"theme\": \"light\"\n                }\n            },\n\n            // use offline map\n            layer: env.get(\"useOfflineMap\") ? \"SenseCraft Offline Map\" : \"Esri Streetmap\",\n\n            // default central and zoom\n            lat: env.get(\"startLatitude\"),\n            lon: env.get(\"startLongitude\"),\n            zoom: env.get(\"zoom\"),\n\n            // adjust map ui\n            showlayer: [\"drawing\", \"tracker\"],\n            ruler: { \"showruler\": false },\n            hiderightclick: true,\n            toptitle: \"SenseCraft Map\",\n            drawcontextmenu: \n                \"<button onclick='editPoly(\\\"geofence\\\");'>Edit points</button>\" +\n                \"<button onclick='editPoly(\\\"geofence\\\", \\\"drag\\\");'>Drag</button>\" +\n                \"<button onclick='editPoly(\\\"geofence\\\", \\\"rot\\\");'>Rotate</button>\" +\n                \"<button onclick='delMarker(\\\"geofence\\\", true);'>Delete</button>\" +\n                \"<button onclick='delMarker(\\\"geofence\\\", true); sendDrawing();'>Set Geofence</button>\"\n        }\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 180,
+        "wires": [
+            [
+                "96ea24175fedf6f4"
+            ]
+        ]
+    },
+    {
+        "id": "e7755049244b350f",
+        "type": "ui-template",
+        "z": "c4c69de5166fafdd",
+        "g": "f4f3769682678829",
+        "group": "${Group}",
+        "page": "",
+        "ui": "",
+        "name": "Map ui",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n   <iframe src=\"/w\" width=\"100%\" height=\"100%\" frameborder=\"0\" loading=\"lazy\" class=\"iframe\" allow=\"geolocation\"></iframe>\n</template>\n\n<style scoped>\n   .iframe {\n      width: 100% !important;\n      height: 100% !important;\n      position: absolute;\n      left: 0;\n      top: 0;\n   }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26312f12f3217573",
+        "type": "worldmap in",
+        "z": "c4c69de5166fafdd",
+        "g": "99e5220aef247514",
+        "name": "worldmap geofence event",
+        "path": "${webPath}",
+        "events": "connect",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "337633503c2515db"
+            ]
+        ]
+    },
+    {
+        "id": "bb27f4c3b8c37aea",
+        "type": "link in",
+        "z": "c4c69de5166fafdd",
+        "g": "f4f3769682678829",
+        "name": "set worldmap'",
+        "links": [
+            "1f20fd19c6b93810",
+            "96ea24175fedf6f4",
+            "eeecd4df7a93968f",
+            "af8c93719ea1fabf",
+            "ab32e98ba6154f6b"
+        ],
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "ade60163a11e3c8c"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "96ea24175fedf6f4",
+        "type": "link out",
+        "z": "c4c69de5166fafdd",
+        "g": "99e5220aef247514",
+        "name": "set worldmap",
+        "mode": "link",
+        "links": [
+            "bb27f4c3b8c37aea"
+        ],
+        "x": 860,
+        "y": 180,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "bf8030f03f7aaecf",
+        "type": "worldmap in",
+        "z": "c4c69de5166fafdd",
+        "g": "2bb23bcf3066d948",
+        "name": "worldmap geofence event",
+        "path": "${webPath}",
+        "events": "draw",
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "4c15cc8d575e89cc",
+                "f80e7c523421d7bc"
+            ]
+        ]
+    },
+    {
+        "id": "4c15cc8d575e89cc",
+        "type": "json",
+        "z": "c4c69de5166fafdd",
+        "g": "2bb23bcf3066d948",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 300,
+        "wires": [
+            [
+                "55b5b5ed834e5c05"
+            ]
+        ]
+    },
+    {
+        "id": "55b5b5ed834e5c05",
+        "type": "function",
+        "z": "c4c69de5166fafdd",
+        "g": "2bb23bcf3066d948",
+        "name": "update geofence",
+        "func": "var payload = msg.payload;\nvar circleMsg = null;\nvar rectangleMsg = null;\nvar polygonMsg = null;\n\n// Parse the incoming payload\ntry {\n    var parsedPayload = JSON.parse(payload);\n} catch (e) {\n    // node.error(\"Invalid JSON payload\", msg);\n    return null;\n}\n\n// Store geofence data in flow context\nif (parsedPayload.type === \"Circle\") {\n    global.set('geofence_geoLat', parsedPayload.lat);\n    global.set('geofence_geoLng', parsedPayload.lon);\n    global.set('geofence_radius', parsedPayload.radius);\n    circleMsg = { \n        payload: parsedPayload \n    };\n    var warnlog = \"Circle geofence set: \" + JSON.stringify(parsedPayload);\n    // node.warn(\"Circle geofence set: \" + JSON.stringify(parsedPayload));\n    node.status({ fill: \"grey\", shape: \"ring\", text: warnlog });\n} else if (parsedPayload.type === \"Rectangle\") {\n    global.set('geofence_geoArea', parsedPayload.area);\n    rectangleMsg = { \n        payload: parsedPayload \n    };\n    var warnlog = \"Rectangle geofence set: \" + JSON.stringify(parsedPayload);\n    // node.warn(\"Rectangle geofence set: \" + JSON.stringify(parsedPayload));\n    node.status({ fill: \"grey\", shape: \"ring\", text: warnlog });\n} else if (parsedPayload.type === \"Polygon\") {\n    global.set('geofence_geoPolygon', parsedPayload.area);\n    polygonMsg = { \n        payload: parsedPayload\n    };\n    var warnlog = \"Polygon geofence set: \" + JSON.stringify(parsedPayload);\n    // node.warn(\"Polygon geofence set: \" + JSON.stringify(parsedPayload));\n    node.status({ fill: \"grey\", shape: \"ring\", text: warnlog });\n}\n\nreturn [circleMsg, rectangleMsg, polygonMsg];\n",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f80e7c523421d7bc",
+        "type": "template",
+        "z": "c4c69de5166fafdd",
+        "g": "2bb23bcf3066d948",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"command\": {\n        \"name\": \"Circle5\",\n        \"deleted\": true\n    }\n}",
+        "output": "json",
+        "x": 390,
+        "y": 360,
+        "wires": [
+            [
+                "ab32e98ba6154f6b"
+            ]
+        ]
+    },
+    {
+        "id": "ab32e98ba6154f6b",
+        "type": "link out",
+        "z": "c4c69de5166fafdd",
+        "g": "2bb23bcf3066d948",
+        "name": "set worldmap",
+        "mode": "link",
+        "links": [
+            "bb27f4c3b8c37aea"
+        ],
+        "x": 580,
+        "y": 360,
+        "wires": [],
+        "l": true
     },
     {
         "id": "6e67621c825551cf",
@@ -11137,6 +11498,30 @@
         ],
         "x": 550,
         "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a0e8259eebb401b",
+        "type": "ui-template",
+        "z": "6b6c5faec21326f9",
+        "group": "${Group}",
+        "page": "",
+        "ui": "",
+        "name": "chat ui",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "<template>\n  <div class=\"chat-window\" id=\"chat\">\n    <div ref=\"chatList\" class=\"chat-content\" id=\"chat-content\">\n      <div v-for=\"(item, index) in reversedMessages\" :key=\"item.id\" class=\"value-per\"\n        :class=\"{ right: item.sender === '@You' }\">\n        <div class=\"flex\">\n          <div v-html=\"item.image\" class=\"avatar-container\"></div>\n          <div>\n            <div style=\"line-height:20px\">\n              <div>\n                <span class=\"text-caption\">{{ formatTime(item.time) }}</span>\n              </div>\n              <div>\n                <strong class=\"user-name\">{{ item.sender }}</strong>\n              </div>\n            </div>\n            <p v-html=\"item.message\" class=\"pre-wrap\"></p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        timer: null,\n      };\n    },\n    computed: {\n      reversedMessages() {\n        return Array.isArray(this.msg.payload) ? [...this.msg.payload] : [];\n      },\n    },\n    methods: {\n      formatTime(timestamp) {\n        const date = new Date(timestamp);\n        return date.toLocaleTimeString();\n      },\n      scrollToBottom(elementId) {\n        const domWrapper = document.getElementById(elementId);\n        const scrollHeight = domWrapper.scrollHeight; // 内容总高度\n        domWrapper.scrollTo(0, scrollHeight + 150);\n\n      },\n    },\n    watch: {\n      msg: {\n        handler(newVal, oldVal) {\n          if (\n            newVal.payload &&\n            newVal.payload.length > (oldVal.payload ? oldVal.payload.length : 0)\n          ) {\n            if (this.timer) clearTimeout(this.timer)\n            this.timer = setTimeout(this.scrollToBottom(\"chat\"), 500)\n          }\n        },\n        deep: true,\n        immediate: true,\n      },\n    },\n    mounted() { },\n    unmounted() {\n      // code here when the component is removed from the Dashboard\n      // i.e. when the user navigates away from the page\n    },\n  };\n</script>\n\n<style scoped>\n  .chat-window {\n    height: 600px;\n    /* Adjust as needed */\n    overflow-y: auto;\n    position: relative;\n  }\n\n  .value-per {\n    display: flex;\n    align-items: flex-start;\n    justify-content: flex-start;\n    line-height: 30px;\n    border-bottom: 1px dashed #abc;\n    padding: 10px;\n  }\n\n  .value-per.right {\n    justify-content: flex-end;\n  }\n\n  .flex {\n    display: flex;\n  }\n\n  .avatar-container {\n    width: 40px;\n    /* Adjust size as needed */\n    height: 40px;\n    /* Adjust size as needed */\n    display: flex;\n    align-items: center;\n    /* Center the avatar vertically */\n  }\n\n  .pre-wrap {\n    white-space: pre-wrap;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 270,
+        "y": 80,
         "wires": [
             []
         ]
@@ -14122,27 +14507,1014 @@
         ]
     },
     {
-        "id": "0a0e8259eebb401b",
-        "type": "ui-template",
-        "z": "6b6c5faec21326f9",
-        "group": "${Group}",
-        "page": "",
-        "ui": "",
-        "name": "chat ui",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "head": "",
-        "format": "<template>\n  <div class=\"chat-window\" id=\"chat\">\n    <div ref=\"chatList\" class=\"chat-content\" id=\"chat-content\">\n      <div v-for=\"(item, index) in reversedMessages\" :key=\"item.id\" class=\"value-per\"\n        :class=\"{ right: item.sender === '@You' }\">\n        <div class=\"flex\">\n          <div v-html=\"item.image\" class=\"avatar-container\"></div>\n          <div>\n            <div style=\"line-height:20px\">\n              <div>\n                <span class=\"text-caption\">{{ formatTime(item.time) }}</span>\n              </div>\n              <div>\n                <strong class=\"user-name\">{{ item.sender }}</strong>\n              </div>\n            </div>\n            <p v-html=\"item.message\" class=\"pre-wrap\"></p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        timer: null,\n      };\n    },\n    computed: {\n      reversedMessages() {\n        return Array.isArray(this.msg.payload) ? [...this.msg.payload] : [];\n      },\n    },\n    methods: {\n      formatTime(timestamp) {\n        const date = new Date(timestamp);\n        return date.toLocaleTimeString();\n      },\n      scrollToBottom(elementId) {\n        const domWrapper = document.getElementById(elementId);\n        const scrollHeight = domWrapper.scrollHeight; // 内容总高度\n        domWrapper.scrollTo(0, scrollHeight + 150);\n\n      },\n    },\n    watch: {\n      msg: {\n        handler(newVal, oldVal) {\n          if (\n            newVal.payload &&\n            newVal.payload.length > (oldVal.payload ? oldVal.payload.length : 0)\n          ) {\n            if (this.timer) clearTimeout(this.timer)\n            this.timer = setTimeout(this.scrollToBottom(\"chat\"), 500)\n          }\n        },\n        deep: true,\n        immediate: true,\n      },\n    },\n    mounted() { },\n    unmounted() {\n      // code here when the component is removed from the Dashboard\n      // i.e. when the user navigates away from the page\n    },\n  };\n</script>\n\n<style scoped>\n  .chat-window {\n    height: 600px;\n    /* Adjust as needed */\n    overflow-y: auto;\n    position: relative;\n  }\n\n  .value-per {\n    display: flex;\n    align-items: flex-start;\n    justify-content: flex-start;\n    line-height: 30px;\n    border-bottom: 1px dashed #abc;\n    padding: 10px;\n  }\n\n  .value-per.right {\n    justify-content: flex-end;\n  }\n\n  .flex {\n    display: flex;\n  }\n\n  .avatar-container {\n    width: 40px;\n    /* Adjust size as needed */\n    height: 40px;\n    /* Adjust size as needed */\n    display: flex;\n    align-items: center;\n    /* Center the avatar vertically */\n  }\n\n  .pre-wrap {\n    white-space: pre-wrap;\n  }\n</style>",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 270,
-        "y": 80,
+        "id": "5988c82904bef598",
+        "type": "ui-led",
+        "z": "0c809b82525ab765",
+        "g": "c28dc59ceae9c32d",
+        "name": "",
+        "group": "ee7258bda6d1e1eb",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "label": "Electronic fence status: ",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-start",
+        "states": [
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#ff0000"
+            },
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 690,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4ac8240eb50406b5",
+        "type": "inject",
+        "z": "0c809b82525ab765",
+        "g": "98c40f424a9c44e2",
+        "name": "on startup",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "x": 170,
+        "y": 600,
         "wires": [
-            []
+            [
+                "62700aef3ed0781b"
+            ]
+        ]
+    },
+    {
+        "id": "9db4c2e9d0a9ec58",
+        "type": "comment",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "v0.0.1",
+        "info": "",
+        "x": 430,
+        "y": 1280,
+        "wires": [],
+        "icon": "font-awesome/fa-exclamation-circle"
+    },
+    {
+        "id": "c3b1a5da5f43d713",
+        "type": "comment",
+        "z": "0c809b82525ab765",
+        "g": "53583def5a2df0c8",
+        "name": "v0.0.2",
+        "info": "",
+        "x": 730,
+        "y": 640,
+        "wires": [],
+        "icon": "font-awesome/fa-exclamation-circle"
+    },
+    {
+        "id": "bb3471a7f85fb434",
+        "type": "comment",
+        "z": "0c809b82525ab765",
+        "g": "b860a2396af6a58d",
+        "name": "v0.0.2",
+        "info": "",
+        "x": 750,
+        "y": 220,
+        "wires": [],
+        "icon": "font-awesome/fa-exclamation-circle"
+    },
+    {
+        "id": "551908b4f634e351",
+        "type": "comment",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "More References solution",
+        "info": "",
+        "x": 150,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f353fb9f47e745d7",
+        "type": "comment",
+        "z": "0c809b82525ab765",
+        "g": "53583def5a2df0c8",
+        "name": "Geofence Area",
+        "info": "",
+        "x": 120,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "c343e6092a6dbe7c",
+        "type": "comment",
+        "z": "0c809b82525ab765",
+        "g": "b860a2396af6a58d",
+        "name": "Digital Twin Area",
+        "info": "",
+        "x": 120,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8717ef571bd0c94b",
+        "type": "subflow:c4c69de5166fafdd",
+        "z": "0c809b82525ab765",
+        "g": "519ba749ee53d39b",
+        "name": "",
+        "env": [
+            {
+                "name": "Group",
+                "value": "5c4a9eb8bcc506ec",
+                "type": "conf-type"
+            },
+            {
+                "name": "zoom",
+                "value": "12",
+                "type": "str"
+            },
+            {
+                "name": "useOfflineMap",
+                "value": "true",
+                "type": "bool"
+            },
+            {
+                "name": "offlineMapZoom",
+                "value": "8",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": "1",
+                "type": "str"
+            }
+        ],
+        "x": 530,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b18ad46558af0da4",
+        "type": "subflow:864d0ea09f268ade",
+        "z": "0c809b82525ab765",
+        "g": "98c40f424a9c44e2",
+        "name": "",
+        "x": 560,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "20ea6d9dd442b76f",
+        "type": "subflow:a71c1f4952addcd7",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "",
+        "x": 150,
+        "y": 1120,
+        "wires": [
+            [
+                "4d962a89b81eb87a"
+            ],
+            [
+                "995c84e705c42f95"
+            ],
+            [
+                "f8e3221e1e80cbfe"
+            ],
+            [
+                "645dfed0a903142d"
+            ]
+        ]
+    },
+    {
+        "id": "ba5793fde63da3de",
+        "type": "subflow:38e9748a918c1e10",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "",
+        "env": [
+            {
+                "name": "rainfall",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "rockType",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "faultActivity",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "slope",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "terrainChange",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "surfaceWaterFlow",
+                "type": "bool",
+                "value": "false"
+            }
+        ],
+        "x": 130,
+        "y": 980,
+        "wires": [
+            [
+                "25731624943ab460"
+            ]
+        ]
+    },
+    {
+        "id": "424b8ba73055c5fd",
+        "type": "subflow:f11a6acbc82d2c5c",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "temperature",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "humidity",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "windSpeed",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "precipitation",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "vegetationDensity",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "fuelMoisture",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "soilMoisture",
+                "type": "bool",
+                "value": "false"
+            }
+        ],
+        "x": 140,
+        "y": 920,
+        "wires": [
+            [
+                "01dc38762911d137"
+            ]
+        ]
+    },
+    {
+        "id": "195f5a9cdc829090",
+        "type": "subflow:f11a6acbc82d2c5c",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "temperature",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "windSpeed",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "precipitation",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "vegetationDensity",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "fuelMoisture",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "soilMoisture",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "fireRisk",
+                "type": "bool",
+                "value": "false"
+            }
+        ],
+        "x": 140,
+        "y": 860,
+        "wires": [
+            [
+                "1b8318210eb474c7"
+            ]
+        ]
+    },
+    {
+        "id": "79bf31c1444fcbe6",
+        "type": "subflow:f11a6acbc82d2c5c",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "humidity",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "windSpeed",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "precipitation",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "vegetationDensity",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "fuelMoisture",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "soilMoisture",
+                "type": "bool",
+                "value": "false"
+            },
+            {
+                "name": "fireRisk",
+                "type": "bool",
+                "value": "false"
+            }
+        ],
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "c10a21c1b22ffdab"
+            ]
+        ]
+    },
+    {
+        "id": "1146255d1badf7fc",
+        "type": "subflow:8e71ad1d725a1c4b",
+        "z": "0c809b82525ab765",
+        "g": "c28dc59ceae9c32d",
+        "name": "",
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "5988c82904bef598"
+            ]
+        ]
+    },
+    {
+        "id": "c843e5d7ef9ff5ae",
+        "type": "subflow:ff55010600100002",
+        "z": "0c809b82525ab765",
+        "g": "c28dc59ceae9c32d",
+        "name": "",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "MQTT Broker",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 230,
+        "y": 500,
+        "wires": [
+            [
+                "1146255d1badf7fc"
+            ]
+        ]
+    },
+    {
+        "id": "01dc38762911d137",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "Fire factor",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Fire factor",
+                "type": "str"
+            },
+            {
+                "name": "card_unit",
+                "value": "%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "40%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "5%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 10,
+                "type": "str"
+            }
+        ],
+        "x": 420,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "25731624943ab460",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "Seismic factor",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Seismic factor",
+                "type": "str"
+            },
+            {
+                "name": "card_unit",
+                "value": "%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "40%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "27%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 9,
+                "type": "str"
+            }
+        ],
+        "x": 400,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "645dfed0a903142d",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "Battery discharge",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Battery discharge",
+                "type": "str"
+            },
+            {
+                "name": "card_unit",
+                "value": "W",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "70%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "71%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 4,
+                "type": "str"
+            }
+        ],
+        "x": 390,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "f8e3221e1e80cbfe",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "Battery status",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Battery status",
+                "type": "str"
+            },
+            {
+                "name": "card_unit",
+                "value": "%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "70%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "49%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 7,
+                "type": "str"
+            }
+        ],
+        "x": 400,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "4d962a89b81eb87a",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "Solar voltage",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Solar voltage",
+                "type": "str"
+            },
+            {
+                "name": "card_unit",
+                "value": "V",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "70%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "5%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 3,
+                "type": "str"
+            }
+        ],
+        "x": 410,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "1b8318210eb474c7",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "Humidity",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Humidity",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "40%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "71%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 11,
+                "type": "str"
+            }
+        ],
+        "x": 420,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "c10a21c1b22ffdab",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "Temperature",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Temperature",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "40%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "49%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 5,
+                "type": "str"
+            }
+        ],
+        "x": 410,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "995c84e705c42f95",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "403fd0931430b1ba",
+        "name": "Power of charge",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Power of charge",
+                "type": "str"
+            },
+            {
+                "name": "card_unit",
+                "value": "W",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "70%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "27%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 6,
+                "type": "str"
+            }
+        ],
+        "x": 400,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "c0aa7556530111a0",
+        "type": "subflow:c64ffede4f1f69bd",
+        "z": "0c809b82525ab765",
+        "g": "b860a2396af6a58d",
+        "name": "",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "Width",
+                "value": "6",
+                "type": "num"
+            },
+            {
+                "name": "Height",
+                "value": "5",
+                "type": "num"
+            },
+            {
+                "name": "imageSelector",
+                "value": "file",
+                "type": "str"
+            },
+            {
+                "name": "imagePath",
+                "value": "default_background.jpg",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": "1",
+                "type": "str"
+            }
+        ],
+        "x": 170,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "33ba69f8c29db322",
+        "type": "subflow:ff55010600100002",
+        "z": "0c809b82525ab765",
+        "g": "519ba749ee53d39b",
+        "name": "",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "MQTT Broker",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "8717ef571bd0c94b"
+            ]
+        ]
+    },
+    {
+        "id": "84ae227288e9adad",
+        "type": "subflow:e0d523198c47fac8",
+        "z": "0c809b82525ab765",
+        "g": "b860a2396af6a58d",
+        "name": "",
+        "env": [
+            {
+                "name": "mqttBroker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "applicationId",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "name": "deviceId",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "20231490b3c12cec"
+            ]
+        ]
+    },
+    {
+        "id": "20231490b3c12cec",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "b860a2396af6a58d",
+        "name": "digital twin data card - ultrasonic",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_unit",
+                "value": "m",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "10%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "5%",
+                "type": "str"
+            },
+            {
+                "name": "UI Group",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 2,
+                "type": "str"
+            }
+        ],
+        "x": 520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "2daa1918dc47a50f",
+        "type": "subflow:c25ee8e3cadf74f6",
+        "z": "0c809b82525ab765",
+        "g": "b860a2396af6a58d",
+        "name": "digital twin data card - tripwire",
+        "env": [
+            {
+                "name": "Group",
+                "value": "8a67b5077a1657c0",
+                "type": "conf-type"
+            },
+            {
+                "name": "card_name",
+                "value": "Tripwire",
+                "type": "str"
+            },
+            {
+                "name": "card_position_y",
+                "value": "10%",
+                "type": "str"
+            },
+            {
+                "name": "card_position_x",
+                "value": "27%",
+                "type": "str"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": 8,
+                "type": "str"
+            }
+        ],
+        "x": 530,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "73051e495187766b",
+        "type": "subflow:fdfd26c77e5e2a42",
+        "z": "0c809b82525ab765",
+        "g": "b860a2396af6a58d",
+        "name": "",
+        "env": [
+            {
+                "name": "mqttBroker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "applicationId",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "name": "deviceId",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "2daa1918dc47a50f"
+            ]
+        ]
+    },
+    {
+        "id": "62700aef3ed0781b",
+        "type": "ui-button",
+        "z": "0c809b82525ab765",
+        "g": "98c40f424a9c44e2",
+        "group": "ee7258bda6d1e1eb",
+        "name": "",
+        "label": "Clear Geofence",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "emulateClick": true,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 600,
+        "wires": [
+            [
+                "b18ad46558af0da4"
+            ]
         ]
     },
     {
@@ -15221,6 +16593,1276 @@
         "wires": [
             [
                 "cda70a2a5aa2c560"
+            ]
+        ]
+    },
+    {
+        "id": "1fd59b16301a17e8",
+        "type": "subflow:6b6c5faec21326f9",
+        "z": "a9319fe458afe6b6",
+        "g": "346a2b3c97997210",
+        "name": "",
+        "env": [
+            {
+                "name": "Group",
+                "value": "e8de57e79e3ba00b",
+                "type": "conf-type"
+            },
+            {
+                "key": "DB2_SF_ORDER",
+                "value": "1",
+                "type": "str"
+            }
+        ],
+        "x": 650,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f080684a49dc646f",
+        "type": "ui-button",
+        "z": "a9319fe458afe6b6",
+        "g": "346a2b3c97997210",
+        "group": "6efcdf57f80c8926",
+        "name": "",
+        "label": "Clear Messages Button UI",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 340,
+        "wires": [
+            [
+                "53d0b77130e78707"
+            ]
+        ]
+    },
+    {
+        "id": "53d0b77130e78707",
+        "type": "change",
+        "z": "a9319fe458afe6b6",
+        "g": "346a2b3c97997210",
+        "name": "delete flow.data",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "data",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 340,
+        "wires": [
+            [
+                "1fd59b16301a17e8"
+            ]
+        ]
+    },
+    {
+        "id": "afb2442e6fbc5d8a",
+        "type": "ui-text-input",
+        "z": "a9319fe458afe6b6",
+        "g": "715d4e1eff0435c7",
+        "group": "6efcdf57f80c8926",
+        "name": "",
+        "label": "Input chat message here",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": true,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 190,
+        "y": 580,
+        "wires": [
+            [
+                "fec2fa8ad7704214"
+            ]
+        ]
+    },
+    {
+        "id": "65b38002d80a7926",
+        "type": "ui-button",
+        "z": "a9319fe458afe6b6",
+        "g": "715d4e1eff0435c7",
+        "group": "6efcdf57f80c8926",
+        "name": "",
+        "label": "Send Message",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "current_inputtext",
+        "payloadType": "flow",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "1ec0c0238c825493"
+            ]
+        ]
+    },
+    {
+        "id": "fec2fa8ad7704214",
+        "type": "change",
+        "z": "a9319fe458afe6b6",
+        "g": "715d4e1eff0435c7",
+        "name": "record text to flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "current_inputtext",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ec0c0238c825493",
+        "type": "function",
+        "z": "a9319fe458afe6b6",
+        "g": "715d4e1eff0435c7",
+        "name": "wrap chat message",
+        "func": "var chatUsername = '@You';\nvar chatMessage = msg.payload;\n\nreturn {\n    topic: chatUsername,\n    payload: chatMessage\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 620,
+        "wires": [
+            [
+                "53870e44e5ace8b2",
+                "43be761c3e9e9f74"
+            ]
+        ]
+    },
+    {
+        "id": "bebcbd1ab1269bbf",
+        "type": "function",
+        "z": "a9319fe458afe6b6",
+        "g": "346a2b3c97997210",
+        "name": "handle user chat ui data",
+        "func": "// 将用户名转换为十六进制的字符串并截取最后四位\nconst chatUsername = msg.topic;\nconst chatMessage = msg.payload\n\n// ------------------ Generate Avatar -----------------------\n// 获取输入参数\nconst text = chatUsername;\nconst width = 30;\nconst height = 30;\nconst textColor = '#FFFFFF'; // 白色\n\n// 生成基于用户名的深色背景\nfunction stringToColor(str) {\n    let hash = 0;\n    for (let i = 0; i < str.length; i++) {\n        hash = str.charCodeAt(i) + ((hash << 5) - hash);\n    }\n    let color = '#';\n    for (let i = 0; i < 3; i++) {\n        let value = (hash >> (i * 8)) & 0xFF;\n        value = Math.floor(value * 0.6); // 调暗颜色\n        color += ('00' + value.toString(16)).substr(-2);\n    }\n    return color;\n}\n\nconst circleColor = stringToColor(chatUsername);\n\n// 使用HTML和CSS生成头像\nconst avatarHtml = `\n    <div style=\"width: ${width}px; height: ${height}px; border-radius: 50%; background-color: ${circleColor}; display: flex; align-items: center; justify-content: center; color: ${textColor}; font-size: 10px; font-weight: bold;\">\n        ${text}\n    </div>\n`;\n\n// ------------------- Generate chat history list ----------------------\nvar tmp = flow.get('data') || [];\n\ntmp.push({\n    image: avatarHtml,\n    sender: chatUsername,\n    message: chatMessage,\n    time: new Date()\n});\n\nflow.set('data', tmp);\nmsg.payload = tmp;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 380,
+        "wires": [
+            [
+                "1fd59b16301a17e8"
+            ]
+        ]
+    },
+    {
+        "id": "03f1fdf2a31d8134",
+        "type": "ui-text",
+        "z": "a9319fe458afe6b6",
+        "g": "8eb1280652c660c2",
+        "group": "6efcdf57f80c8926",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "Show route info",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 820,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2fbc45a4def674f8",
+        "type": "subflow:61d68b31136dfa92",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "green on",
+        "env": [
+            {
+                "name": "modbus-client",
+                "value": "ff55020100020001",
+                "type": "conf-type"
+            },
+            {
+                "name": "productModel",
+                "value": "typea",
+                "type": "str"
+            },
+            {
+                "name": "LIGHT_COLOR",
+                "value": "green",
+                "type": "str"
+            },
+            {
+                "name": "DEVICE_VENDOR",
+                "value": "typea",
+                "type": "str"
+            }
+        ],
+        "x": 820,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "2c02a34157a2ec9b",
+        "type": "subflow:61d68b31136dfa92",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "yellow on",
+        "env": [
+            {
+                "name": "modbus-client",
+                "value": "ff55020100020001",
+                "type": "conf-type"
+            },
+            {
+                "name": "productModel",
+                "value": "typea",
+                "type": "str"
+            },
+            {
+                "name": "LIGHT_COLOR",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "name": "DEVICE_VENDOR",
+                "value": "typea",
+                "type": "str"
+            }
+        ],
+        "x": 820,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "747375a58c6ca14e",
+        "type": "subflow:e0d523198c47fac8",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "",
+        "env": [
+            {
+                "name": "mqttBroker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "applicationId",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "name": "deviceId",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 220,
+        "y": 1540,
+        "wires": [
+            [
+                "a4bb8528feb6766c",
+                "158ad691aac3f239"
+            ]
+        ]
+    },
+    {
+        "id": "cf0be92962dd1c37",
+        "type": "subflow:c331a93ea0d418b4",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "meshtastic chat -  receive message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            }
+        ],
+        "x": 220,
+        "y": 980,
+        "wires": [
+            [
+                "1e4ac8c4f95f8ccf"
+            ]
+        ]
+    },
+    {
+        "id": "8d248fc5be748a9e",
+        "type": "subflow:c331a93ea0d418b4",
+        "z": "a9319fe458afe6b6",
+        "g": "3c5b4e04f79ed01c",
+        "name": "meshtastic chat - receive message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            }
+        ],
+        "x": 220,
+        "y": 480,
+        "wires": [
+            [
+                "f4e38e4884fc9cdc"
+            ]
+        ]
+    },
+    {
+        "id": "db5ac7ba2a754d65",
+        "type": "subflow:ff55010600100001",
+        "z": "a9319fe458afe6b6",
+        "g": "8eb1280652c660c2",
+        "name": "",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            }
+        ],
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "4a5b13a4e63396ee"
+            ]
+        ]
+    },
+    {
+        "id": "4a5b13a4e63396ee",
+        "type": "function",
+        "z": "a9319fe458afe6b6",
+        "g": "8eb1280652c660c2",
+        "name": "set route info text",
+        "func": "var routeIdHexStr = parseInt(msg.topic).toString(16);\nvar onlineStatusStr = msg.payload ? 'Online' : 'Offline';\n\nreturn {\n    payload: `Route State: ${onlineStatusStr}<br/>Route ID: ${msg.topic === 0 ? 'None' : (msg.topic + '(' + routeIdHexStr + ')')}`\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "03f1fdf2a31d8134"
+            ]
+        ]
+    },
+    {
+        "id": "aa1a0522cb1e76b4",
+        "type": "subflow:15e3d881bcd13372",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "meshtastic chat - send message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "firstLineText",
+                "value": "[Automatic]current ultrasonic value:",
+                "type": "str"
+            },
+            {
+                "name": "suffixText",
+                "value": "m",
+                "type": "str"
+            }
+        ],
+        "x": 700,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "53870e44e5ace8b2",
+        "type": "subflow:15e3d881bcd13372",
+        "z": "a9319fe458afe6b6",
+        "g": "715d4e1eff0435c7",
+        "name": "meshtastic chat - send message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            }
+        ],
+        "x": 760,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "a6279e97f8d67997",
+        "type": "subflow:fdfd26c77e5e2a42",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "",
+        "env": [
+            {
+                "name": "mqttBroker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "applicationId",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "name": "deviceId",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 210,
+        "y": 1620,
+        "wires": [
+            [
+                "710ca388b2b9c30f",
+                "70a4a1dd58581050"
+            ]
+        ]
+    },
+    {
+        "id": "b288e522160ae3e5",
+        "type": "subflow:15e3d881bcd13372",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "meshtastic chat - send message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "firstLineText",
+                "value": "[Automatic]current tripwire status:",
+                "type": "str"
+            }
+        ],
+        "x": 700,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "e2b620f2ecf5b4b7",
+        "type": "ui-switch",
+        "z": "a9319fe458afe6b6",
+        "g": "1551266451c3fb26",
+        "name": "",
+        "label": "Enable sensor value reporting",
+        "group": "6efcdf57f80c8926",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 230,
+        "y": 1380,
+        "wires": [
+            [
+                "db96dce448c12ae5"
+            ]
+        ]
+    },
+    {
+        "id": "db96dce448c12ae5",
+        "type": "change",
+        "z": "a9319fe458afe6b6",
+        "g": "1551266451c3fb26",
+        "name": "set enable/disable flag",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reportSensorValueEnabled",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4bb8528feb6766c",
+        "type": "switch",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "enabled?",
+        "property": "reportSensorValueEnabled",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 460,
+        "y": 1540,
+        "wires": [
+            [
+                "aa1a0522cb1e76b4"
+            ]
+        ]
+    },
+    {
+        "id": "710ca388b2b9c30f",
+        "type": "switch",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "enabled?",
+        "property": "reportSensorValueEnabled",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 460,
+        "y": 1620,
+        "wires": [
+            [
+                "b288e522160ae3e5"
+            ]
+        ]
+    },
+    {
+        "id": "2d6114a1bb679b95",
+        "type": "ui-switch",
+        "z": "a9319fe458afe6b6",
+        "g": "89ed2cd971381520",
+        "name": "",
+        "label": "Enable control light",
+        "group": "6efcdf57f80c8926",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 170,
+        "y": 860,
+        "wires": [
+            [
+                "b87a78564d7dd3ff"
+            ]
+        ]
+    },
+    {
+        "id": "b87a78564d7dd3ff",
+        "type": "change",
+        "z": "a9319fe458afe6b6",
+        "g": "89ed2cd971381520",
+        "name": "set enable/disable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "controlLightEnabled",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a671425179a5ebba",
+        "type": "subflow:61d68b31136dfa92",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "red on",
+        "env": [
+            {
+                "name": "modbus-client",
+                "value": "ff55020100020001",
+                "type": "conf-type"
+            },
+            {
+                "name": "productModel",
+                "value": "typea",
+                "type": "str"
+            },
+            {
+                "name": "DEVICE_VENDOR",
+                "value": "typea",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "fde8650716160e52",
+        "type": "subflow:61d68b31136dfa92",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "light off",
+        "env": [
+            {
+                "name": "modbus-client",
+                "value": "ff55020100020001",
+                "type": "conf-type"
+            },
+            {
+                "name": "productModel",
+                "value": "typea",
+                "type": "str"
+            },
+            {
+                "name": "LIGHT_MODE",
+                "value": "off",
+                "type": "str"
+            },
+            {
+                "name": "DEVICE_VENDOR",
+                "value": "typea",
+                "type": "str"
+            }
+        ],
+        "x": 820,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "74fde634240e1723",
+        "type": "ui-text",
+        "z": "a9319fe458afe6b6",
+        "g": "89ed2cd971381520",
+        "group": "6efcdf57f80c8926",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "\"light green\" \"light red\" \"light yellow\" \"light off\"",
+        "format": "{{msg.payload}}",
+        "layout": "row-right",
+        "style": true,
+        "font": "",
+        "fontSize": "14",
+        "color": "#c2c2c2",
+        "className": "",
+        "x": 260,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "c9a448b4454fc848",
+        "type": "ui-text",
+        "z": "a9319fe458afe6b6",
+        "g": "1551266451c3fb26",
+        "group": "6efcdf57f80c8926",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "\"ultrasonic\" \"tripwire\"",
+        "format": "{{msg.payload}}",
+        "layout": "row-right",
+        "style": true,
+        "font": "",
+        "fontSize": "14",
+        "color": "#c2c2c2",
+        "className": "",
+        "x": 260,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "f4e38e4884fc9cdc",
+        "type": "link out",
+        "z": "a9319fe458afe6b6",
+        "g": "3c5b4e04f79ed01c",
+        "name": "link A",
+        "mode": "link",
+        "links": [
+            "b70b4cead50cf7b4"
+        ],
+        "x": 450,
+        "y": 480,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "43be761c3e9e9f74",
+        "type": "link out",
+        "z": "a9319fe458afe6b6",
+        "g": "715d4e1eff0435c7",
+        "name": "link A",
+        "mode": "link",
+        "links": [
+            "b70b4cead50cf7b4"
+        ],
+        "x": 670,
+        "y": 580,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "b70b4cead50cf7b4",
+        "type": "link in",
+        "z": "a9319fe458afe6b6",
+        "g": "346a2b3c97997210",
+        "name": "link A'",
+        "links": [
+            "43be761c3e9e9f74",
+            "f4e38e4884fc9cdc",
+            "0a42f96220d3bb8b"
+        ],
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "bebcbd1ab1269bbf"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "1e4ac8c4f95f8ccf",
+        "type": "switch",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "start with '@mp'",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^@mp.*",
+                "vt": "str",
+                "case": true
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 1040,
+        "wires": [
+            [
+                "ea24ab258435fcf5"
+            ]
+        ]
+    },
+    {
+        "id": "158ad691aac3f239",
+        "type": "change",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "save",
+        "rules": [
+            {
+                "t": "set",
+                "p": "save_u",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70a4a1dd58581050",
+        "type": "change",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "save",
+        "rules": [
+            {
+                "t": "set",
+                "p": "save_t",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16c63bfa8614cb46",
+        "type": "subflow:15e3d881bcd13372",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "meshtastic chat - send message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "prefixText",
+                "value": "",
+                "type": "env"
+            },
+            {
+                "name": "suffixText",
+                "value": "m",
+                "type": "str"
+            }
+        ],
+        "x": 900,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "b0b222c55b1cca0c",
+        "type": "subflow:15e3d881bcd13372",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "meshtastic chat - send message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "firstLineText",
+                "value": "[Automatic]current tripwire status:",
+                "type": "str"
+            },
+            {
+                "name": "prefixText",
+                "value": "",
+                "type": "env"
+            }
+        ],
+        "x": 900,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "ea24ab258435fcf5",
+        "type": "switch",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "command type",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "sensor",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "light",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 360,
+        "y": 1040,
+        "wires": [
+            [
+                "b6787453fdafa34f",
+                "63ec0ca68c54bf68"
+            ],
+            [
+                "1b254c2ecc8d070c"
+            ],
+            [
+                "207ff54d4031988f"
+            ]
+        ]
+    },
+    {
+        "id": "6974dd9f8541cf10",
+        "type": "template",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "Done",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "@{{topic}}\n\nDone",
+        "output": "str",
+        "x": 690,
+        "y": 1120,
+        "wires": [
+            [
+                "906da40788a2a653"
+            ]
+        ]
+    },
+    {
+        "id": "906da40788a2a653",
+        "type": "subflow:15e3d881bcd13372",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "meshtastic chat - send message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            },
+            {
+                "name": "prefixText",
+                "value": "",
+                "type": "env"
+            }
+        ],
+        "x": 900,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "1b254c2ecc8d070c",
+        "type": "switch",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "yellow",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "red",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 590,
+        "y": 1000,
+        "wires": [
+            [
+                "2fbc45a4def674f8",
+                "6974dd9f8541cf10"
+            ],
+            [
+                "2c02a34157a2ec9b",
+                "6974dd9f8541cf10"
+            ],
+            [
+                "a671425179a5ebba",
+                "6974dd9f8541cf10"
+            ],
+            [
+                "fde8650716160e52",
+                "6974dd9f8541cf10"
+            ]
+        ]
+    },
+    {
+        "id": "62028a4a17998fde",
+        "type": "subflow:15e3d881bcd13372",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "meshtastic chat - send message",
+        "env": [
+            {
+                "name": "mqtt-broker",
+                "value": "ff55020100010001",
+                "type": "conf-type"
+            }
+        ],
+        "x": 900,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "bc11da047423a1a6",
+        "type": "comment",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "chat to control",
+        "info": "",
+        "x": 120,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8f011a4c95e46173",
+        "type": "comment",
+        "z": "a9319fe458afe6b6",
+        "g": "8eb1280652c660c2",
+        "name": "initial meshtastic route, and get state",
+        "info": "",
+        "x": 180,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "45547527be48c127",
+        "type": "comment",
+        "z": "a9319fe458afe6b6",
+        "g": "25dbbcda2ecff0d3",
+        "name": "Chat",
+        "info": "",
+        "x": 90,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "46a4333e9f1af0bb",
+        "type": "comment",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "send ultrasonic sensor value through meshtastic",
+        "info": "",
+        "x": 220,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "33637b17a506cbd0",
+        "type": "comment",
+        "z": "a9319fe458afe6b6",
+        "g": "8eb1280652c660c2",
+        "name": "v0.0.1",
+        "info": "",
+        "x": 870,
+        "y": 160,
+        "wires": [],
+        "icon": "font-awesome/fa-exclamation-circle"
+    },
+    {
+        "id": "c908a7b3e9ceed5f",
+        "type": "comment",
+        "z": "a9319fe458afe6b6",
+        "g": "25dbbcda2ecff0d3",
+        "name": "v0.0.1",
+        "info": "",
+        "x": 870,
+        "y": 680,
+        "wires": [],
+        "icon": "font-awesome/fa-exclamation-circle"
+    },
+    {
+        "id": "15b3a31efa73cab8",
+        "type": "comment",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "v0.0.1",
+        "info": "",
+        "x": 990,
+        "y": 1200,
+        "wires": [],
+        "icon": "font-awesome/fa-exclamation-circle"
+    },
+    {
+        "id": "7743bc6a2a1fee06",
+        "type": "comment",
+        "z": "a9319fe458afe6b6",
+        "g": "d72fe5300f0090a1",
+        "name": "v0.0.1",
+        "info": "",
+        "x": 790,
+        "y": 1660,
+        "wires": [],
+        "icon": "font-awesome/fa-exclamation-circle"
+    },
+    {
+        "id": "207ff54d4031988f",
+        "type": "template",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "welcome txt",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Hi {{topic}}!\nYou can @mp and tell:\n1. light green\n2. light yellow\n3. light red\n4. light off\n5. sensor",
+        "output": "str",
+        "x": 670,
+        "y": 1160,
+        "wires": [
+            [
+                "62028a4a17998fde"
+            ]
+        ]
+    },
+    {
+        "id": "b6787453fdafa34f",
+        "type": "template",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "message template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "@{{topic}}\n\ncurrent tripwire: {{flow.save_t}}",
+        "output": "str",
+        "x": 650,
+        "y": 880,
+        "wires": [
+            [
+                "b0b222c55b1cca0c"
+            ]
+        ]
+    },
+    {
+        "id": "63ec0ca68c54bf68",
+        "type": "template",
+        "z": "a9319fe458afe6b6",
+        "g": "cabc3b813baaea59",
+        "name": "message template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "@{{topic}}\n\ncurrent ultrasonic: {{flow.save_u}}m",
+        "output": "str",
+        "x": 650,
+        "y": 840,
+        "wires": [
+            [
+                "16c63bfa8614cb46"
             ]
         ]
     },
