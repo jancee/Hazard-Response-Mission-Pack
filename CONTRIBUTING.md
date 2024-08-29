@@ -1,55 +1,65 @@
-# Contributing to Mission Pack Hazard Response
+# Contribution Guide for Hazard Response Mission Pack
 
-Thank you for your interest in contributing to the Mission Pack Hazard Response project! We welcome contributions from everyone. Below are the guidelines to help you get started.
+Thank you for your interest in contributing to our Hazard Response Mission Pack project! We welcome contributions from the community to help build and enhance our project. Here’s how you can get involved and contribute effectively.
+
+## Repository Structure
+
+For Node-RED flows, please place them in the `node-red-flows` directory at the root of the repository. This directory is organized into three categories:
+- **snippets**: Small, reusable pieces of functionality.
+- **projects**: Complete, standalone projects.
+- **functional-nodes**: Specific Node-RED nodes with defined functionality.
+
+## Types of Contributions
+
+We welcome contributions of any kind, including but not limited to:
+
+- **Node-RED Flows**: As described above.
+- **Documentation**: Improvements, corrections, and additions to the documentation.
+- **System Enhancements**: Updates or changes to the system architecture or configurations.
+- **Software**: New features, bug fixes, or improvements to the existing software.
+- **Firmware**: Contributions to the firmware that interacts with our hardware.
 
 ## Getting Started
 
-1. **Fork the Repository**: Fork the project repository to your own GitHub account.
-2. **Clone the Repository**: Clone the forked repository to your local machine.
-
-    ```bash
-    git clone https://github.com/your-username/Mission-Pack-Hazard-Response.git
+1. **Fork the Repository**: Start by forking the [repository](https://github.com/Seeed-Studio/Hazard-Response-Mission-Pack) to your GitHub account.
+2. **Clone Your Fork**: Clone your fork to your local machine using:
+    ```sh
+    git clone https://github.com/<your-username>/Hazard-Response-Mission-Pack.git
+    ```
+3. **Create a Branch**: Create a new branch for your changes:
+    ```sh
+    git checkout -b my-new-feature
     ```
 
-3. **Create a Branch**: Create a new branch for your work.
+## Making Changes
 
-    ```bash
-    git checkout -b feature/my-feature
-    ```
+1. **Add Your Contribution**: Add your files or make changes to the existing files in the appropriate directories.
+2. **Follow Existing Formats**: Ensure that your contributions follow the format and style of the existing content in the repository.
+3. **Test Your Changes**: Test your changes thoroughly to ensure they work as expected and do not introduce any issues.
 
-4. **Make Changes**: Implement your changes in the new branch.
+## Submitting Your Contribution
 
-5. **Commit Your Changes**: Commit your changes with a clear and concise commit message.
-
-    ```bash
+1. **Commit Your Changes**: Commit your changes with a clear and descriptive message:
+    ```sh
     git add .
-    git commit -m "Add new feature: my-feature"
+    git commit -m "Add new feature/update for X"
     ```
-
-6. **Push to GitHub**: Push your changes to your forked repository on GitHub.
-
-    ```bash
-    git push origin feature/my-feature
+2. **Push to Your Fork**: Push your changes to your forked repository:
+    ```sh
+    git push origin my-new-feature
     ```
+3. **Create a Pull Request**: Go to the original repository on GitHub and create a new pull request. Provide a clear description of your changes and reference any relevant issues.
 
-7. **Create a Pull Request**: Open a pull request from your branch to the `main` branch of the original repository.
+## Review Process
 
-## Coding Guidelines
+Once you have submitted your pull request (PR), it will be reviewed by the repository maintainers. They may suggest changes or improvements. Please be responsive to feedback and make the necessary updates.
 
-- **Code Style**: Follow the coding style and conventions used in the existing codebase.
-- **Comments**: Write clear comments for your code to explain what it does and why it’s necessary.
-- **Documentation**: Update the documentation for any new features or changes you make.
+## Questions
 
-## Reporting Issues
+If you have any questions or need further assistance, feel free to open an issue in the repository or reach out to the maintainers.
 
-If you find a bug or have an idea for a new feature, please open an issue in the repository. Make sure to provide as much detail as possible to help us understand the issue or feature request.
+We look forward to your contributions and thank you for helping us improve the Hazard Response Mission Pack!
 
-## Code of Conduct
+---
 
-By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
-
-## License
-
-By contributing, you agree that your contributions will be licensed under the same license as the project.
-
-Thank you for your contributions!
+Feel free to customize this guide further based on the specific needs and structure of your project.

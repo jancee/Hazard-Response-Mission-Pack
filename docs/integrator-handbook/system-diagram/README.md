@@ -1,4 +1,1 @@
-Mission Pack System Diagram
-
----
-
+# Mission Pack System Diagram
