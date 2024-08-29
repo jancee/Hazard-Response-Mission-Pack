@@ -20,12 +20,15 @@ This is not a market-ready product; rather, it represents a collaborative effort
 
 ##### V0.3
 
-| No. | Product Name |
+| No. | Type | Product Name |
 | --- | :--- |
-| 
+| 1 | | 
+| 2 | [SenseCAP Card Tracker T1000-E for Meshtastic](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) x 3 |
+| 3 | |
 
 ##### V0.2
 
 | No. | Product Name |
 | --- | --- |
 | 1 | reComputer R1025 |
+| 2 | [SenseCAP Card Tracker T1000-E for Meshtastic](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) x 3 |
