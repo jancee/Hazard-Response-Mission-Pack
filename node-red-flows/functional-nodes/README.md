@@ -13,6 +13,8 @@ This includes the incoming and outgoing data from the device, and some of the ap
 | IoT | Basecamp | The base config nodes of 3 channels RS485 in reComputer r1000. | ·[JSON](./global/default_rs485_global_nodes.json) |
 | IoT | Basecamp | The base config node of the built-in MQTT network. | ·[JSON](./global/default_rs485_global_nodes.json) |
 
+> ❤️ Looking forward to more contributors to create useful nodes.
+
 ## Functional Subflow Inventory
 
 | Type | Related Equipment | Description | Flow File |
@@ -33,5 +35,7 @@ This includes the incoming and outgoing data from the device, and some of the ap
 | Virtual Device | Basecamp | A virtual device node for presenting possible scenarios of a 7-in-1 weather station, with community contributions expected. | ·[JSON](./subflow/7in1-weather-station.json) <br/> ·Doc |
 | Virtual Device | Basecamp | A virtual device node for presenting possible scenarios of a power system sensor, with community contributions expected. | ·[JSON](./subflow/power-system-sensor.json) <br/> ·Doc |
 
+> ❤️ Looking forward to more contributors to create useful subflows.
 
 ## Contributions
+
