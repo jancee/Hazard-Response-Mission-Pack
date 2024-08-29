@@ -6,13 +6,19 @@ This is a share and repository of flow for Node-RED that includes community cont
 
 #### 1.1 Snippets
 
+Various Sample applications and Node-RED flow snippets.
+
 For more information, see [here](./snippets/README.md)
 
 #### 1.2 Projects
 
+Including the complete application case, a subsystem is implemented through flow.
+
 For more information, see [here](./projects/README.md)
 
 #### 1.3 Functional Nodes
+
+This includes the incoming and outgoing data from the device, and some of the application case base dependencies on the Global and Subflow nodes.
 
 For more information, see [here](./functional-nodes/README.md)
 

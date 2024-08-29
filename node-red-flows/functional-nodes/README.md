@@ -8,27 +8,26 @@ This includes the incoming and outgoing data from the device, and some of the ap
 
 ## Functional Global Nodes Inventory
 
-| Type | Related equipment | Author | Description | Flow File |
-| --- | --- | --- | --- | --- |
-| IoT | Basecamp | @Seeed-Studio | The base config nodes of 3 channels RS485 in reComputer r1000. | [JSON](./global/default_rs485_global_nodes.json) |
-| IoT | Basecamp | @Seeed-Studio | The base config node of the built-in MQTT network. | [JSON](./global/default_rs485_global_nodes.json) |
+| Type | Related Equipment | Description | Flow File |
+| --- | --- | --- | --- |
+| IoT | Basecamp | The base config nodes of 3 channels RS485 in reComputer r1000. | ·[JSON](./global/default_rs485_global_nodes.json) |
+| IoT | Basecamp | The base config node of the built-in MQTT network. | ·[JSON](./global/default_rs485_global_nodes.json) |
 
 ## Functional Subflow Inventory
 
-| Type | Related equipment | Author | Description | Flow File |
-| --- | --- | --- | --- | --- |
-| UI | Basecamp | @Seeed-Studio | | [JSON](./subflow/condition.json) |
-| Logic & UI | Basecamp | @Seeed-Studio | Map ui and geofence. It can be used with tracker for location and asset management | [JSON](./subflow/condition.json) |
-| Logic | Basecamp | @Seeed-Studio | Good logic judgment node, used to simply do multi-device data condition judgment processing and execution | [JSON](./subflow/condition.json) |
-| Virtual Device | Basecamp | @Seeed-Studio | A virtual device node for presenting possible scenarios of a 7-in-1 weather station, with community contributions expected | [JSON](./subflow/7in1-weather-station.json) |
-| Device | SenseCAP T1000-E | @Seeed-Studio |  |
-| Device | Basecamp | @Seeed-Studio |  |
-| Device | Basecamp | @Seeed-Studio |  |
-| Device | Basecamp | @Seeed-Studio |  |
-| Device | Basecamp <br/>& RS485 Light Controller | @Seeed-Studio | Integrate reComputer R1000, with rs485 light controller. | [JSON](./subflow/rs485-light-controller.json) |
-| Device | SenseCAP Data Logger <br/>& Ultrosonic | @Seeed-Studio | Integrate SenseCAP Data Logger, with a ultrosonic sensor. | [JSON](./subflow/sensecap-data-logger-ultrasonic.json) |
-| Device | SenseCAP Data Logger <br/>& Tripwire | @Seeed-Studio | Integrate SenseCAP Data Logger, with a tripwire sensor. | [JSON](./subflow/sensecap-data-logger-tripwire.json) |
-
-
-
-
+| Type | Related Equipment | Description | Flow File |
+| --- | --- | --- | --- |
+| UI | Basecamp | A beautiful digital twin data panel is implemented, on the node red dashboard. | ·[JSON](./subflow/digital-twin.json) <br/> ·Doc |
+| UI | Basecamp | An image preview panel, on the node red dashboard. | ·[JSON](./subflow/image-preview-ui.json) <br/> ·Doc |
+| Logic & UI | Basecamp | Map ui and geofence. It can be used with tracker for location and asset management. | ·[JSON](./subflow/geofence.json) <br/> ·Doc |
+| Logic | Basecamp | Good logic judgment node, used to simply do multi-device data condition judgment processing and execution. | ·[JSON](./subflow/condition.json) <br/> ·Doc |
+| Device | Basecamp | Receive generic ip camera images, or any rtmp streaming media. | ·[JSON](./subflow/rpi-ip-camera-rtsp.json) <br/> ·Doc |
+| Device | Basecamp | Through the Raspberry PI processor, the function of face recognition is realized. | ·[JSON](./subflow/rpi-face-recognization.json) <br/> ·Doc |
+| Device | Basecamp | Through the Raspberry PI processor, the function of object detection is realized. | ·[JSON](./subflow/rpi-object-detection.json) <br/> ·Doc |
+| Device | SenseCAP T1000-E | Through meshtastic tracker, gps positioning and text message sending and receiving functions are implemented. | ·[JSON](./subflow/meshtastic.json) <br/> ·Doc |
+| Device | Basecamp <br/>& RS485 Light Controller | Integrate reComputer R1000, with rs485 light controller. | ·[JSON](./subflow/rs485-light-controller.json) <br/> ·Doc |
+| Device | Grove-Vision AI V2 <br/>& XIAOESP32C3 | Integrate Grove - Vision AI V2, with XIAOESP32C3. | ·[JSON](./subflow/grove-vision-ai-v2.json) <br/> ·Doc |
+| Device | SenseCAP Data Logger<br/>& Ultrosonic | Integrate SenseCAP Data Logger, with a ultrosonic sensor. | ·[JSON](./subflow/sensecap-data-logger-ultrasonic.json) <br/> ·Doc |
+| Device | SenseCAP Data Logger<br/>& Tripwire | Integrate SenseCAP Data Logger, with a tripwire sensor. | ·[JSON](./subflow/sensecap-data-logger-tripwire.json) <br/> ·Doc |
+| Device | SenseCAP Watcher | This Subflow implementation integrates SenseCAP Watcher to achieve the functions of getting images, sounds, alarms, and sending tasks and pictures | ·[JSON](./subflow/sensecap-watcher.json) <br/> ·Doc |
+| Virtual Device | Basecamp | A virtual device node for presenting possible scenarios of a 7-in-1 weather station, with community contributions expected. | ·[JSON](./subflow/7in1-weather-station.json) <br/> ·Doc |
