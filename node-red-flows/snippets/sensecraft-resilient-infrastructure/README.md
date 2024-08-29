@@ -14,7 +14,7 @@
 
   ![flow-snapshot](./imgs/flow-snapshot_water-level-dashboard.png)
 
-- [flow.json](./flows/)
+- [flow.json](./flows/water-level-dashboard.json)
 
 ## Sound Control Dashboard
 
@@ -22,7 +22,7 @@
 
   ![flow-snapshot](./imgs/flow-snapshot_sound-level-dashboard.png)
 
-- [flow.json]()
+- [flow.json](./flows/sound-control-dashboard.json)
 
 ## Light Control Dashboard
 
@@ -30,4 +30,4 @@
 
   ![flow-snapshot](./imgs/flow-snapshot_light-control-dashboard.png)
 
-- [flow.json]()
+- [flow.json](./flows/light-control-dashboard.json)

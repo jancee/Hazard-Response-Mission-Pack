@@ -1,15 +1,25 @@
 # Digital Twin Dashboard
 
-### Description
+## Digital Twin Area
 
-![digital-twin-area](./imgs/digital-twin-area.png)
+- Flow snapshot:
 
-### Prepare
+  ![flow-snapshot](./imgs/flow-snapshot_digital-twin-area.png)
 
-1. You can refer to [XXX](./README.md) to connect a lorawan sensor to the mission pack.
+- [flow.json](./flows/digital-twin-area.json)
 
-### Steps
+## Geofence Area
 
-1. Make sure the prepare step is ready.
-2. Download the flow snippet file [digital-twin-area-json](./digital-twin-area.json) and import to node-red on the mission pack.
-3. Configure the imported node associated with the device that was prepared during the prepare phase.
+- Flow snapshot:
+
+  ![flow-snapshot](./imgs/flow-snapshot_geofence-area.png)
+
+- [flow.json](./flows/geofence-area.json)
+
+## More References Solution
+
+- Flow snapshot:
+
+  ![flow-snapshot](./imgs/flow-snapshot_more-references-solution.png)
+
+- [flow.json](./flows/more-references-solution.json)
